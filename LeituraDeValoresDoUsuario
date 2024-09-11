@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class LeituraDeValoresDoUsuario {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int[] number = new int[3];
+
+        System.out.println("Insira primeiro número: ");
+        number[0] = sc.nextInt();
+        System.out.println("Insira segundo número: ");
+        number[1] = sc.nextInt();
+        System.out.println("Insira terceiro número: ");
+        number[2] = sc.nextInt();
+
+        int temp1 = number[0];
+        int temp2 = number[1];
+        int temp3 = number[2];
+        int media = temp1 + temp2 + temp3 / 3;
+
+        System.out.println("Os vetores são: " + temp1 + "," + temp2 + "," + temp3);
+        System.out.println("A média é: " + media);
+    }
+
+}
