@@ -1,0 +1,28 @@
+public class TrocaDeValores {
+
+    public static void main(String[] args) {
+
+        int[] numeros = new int[2];
+
+        numeros[0] = 5;
+        numeros[1] = 10;
+
+        // Exibir os valores antes da troca
+        System.out.println("Antes da troca:");
+        System.out.println("Posição 0: " + numeros[0]);
+        System.out.println("Posição 1: " + numeros[1]);
+
+        // Trocar os valores entre as duas posições
+        // variável temp -> temporária
+        int temp = numeros[0]; // Armazenar o valor da posição 0
+        numeros[0] = numeros[1]; // Atribuir o valor da posição 1 para a posição 0
+        numeros[1] = temp;     // Atribuir o valor armazenado para a posição 1
+
+        // Exibir os valores após a troca
+        System.out.println("Depois da troca:");
+        System.out.println("Posição 0: " + numeros[0]);
+        System.out.println("Posição 1: " + numeros[1]);
+
+    }
+
+}
