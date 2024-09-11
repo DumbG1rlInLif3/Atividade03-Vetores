@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class LeituraDeNomesDosUsuarios {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        String[] nome = new String[3];
+
+        System.out.println("Digite primeiro nome: ");
+        nome[0] = sc.nextLine();
+        System.out.println("Digite segundo nome: ");
+        nome[1] = sc.nextLine();
+        System.out.println("Digite terceiro nome: ");
+        nome[2] = sc.nextLine();
+
+        String temp1 = nome[0];
+        String temp2 = nome[1];
+        String temp3 = nome[2];
+
+        System.out.println("Nome 1: " + temp1);
+        System.out.println("Nome 2: " + temp2);
+        System.out.println("Nome 3: " + temp3);
+
+    }
+
+}
